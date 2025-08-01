@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contextio</title>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="search-container">
+        <div class="context-header">
+          <span>Search</span>
+        </div>
+        <input type="text" id="searchInput" placeholder="@files" />
+      </div>
+      <ul id="searchResults"></ul>
+
+      <div class="context-container" id="context-container">
+        <div id="contextPills" class="pill-container">
+          <p class="drop-hint">Drag and drop files here (hold shift)</p>
+        </div>
+      </div>
+
+      <div
+        id="summary-container"
+        class="context-container"
+        style="display: none"
+      >
+        <div class="context-header">
+          <span>Summary</span>
+        </div>
+        <div id="context-summary"></div>
+      </div>
+    </div>
+
+    <div class="footer-actions">
+      <button id="exportBtn" title="Export context">Export context</button>
+    </div>
+  </body>
+</html>
